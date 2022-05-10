@@ -1,0 +1,251 @@
+{% include 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>@Labels</title>
+</head>
+<body>
+  <style>
+    html{
+  background-color: black;
+  box-sizing: border-box;
+}
+
+#carta{
+ margin-left: 1%;
+ padding: 20px;
+  font-size: 22px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+  text-align: center;
+  width: 300px;
+  margin-left: 5%;
+}
+#carta1{
+  margin-left: 1%;
+   padding: 20px;
+   font-size: 22px;
+   border-radius: 25px;
+   background-color: white;
+   box-shadow: 2px 2px 10px black;
+   text-align: center;
+   width: 300px;
+ }
+ #carta2{
+  margin-left: 1%;
+  padding: 20px;
+   font-size: 22px;
+   border-radius: 25px;
+   background-color: white;
+   box-shadow: 2px 2px 10px black;
+   text-align: center;
+   width: 300px;
+ }
+/* img{
+  border-radius: 25px;
+  box-shadow: 5px 5px 4px gray;
+  transition: 1s;
+} */
+img:hover{
+  filter: invert(100%);
+}
+p{
+  text-align: justify;
+}
+.boton{
+  text-decoration: none;
+  margin: 20px;
+  padding: 2px 20px;
+  border-radius: 20px;
+  border: solid tomato 2px;
+  color: black;
+  box-shadow: 2px 2px 2px gray;
+  display: block;
+  transition: .5s;
+}
+.boton:hover{
+  background-color: tomato;
+}
+#cerrar{
+  text-decoration: none;
+  color: red;
+  border: solid red 1px;
+  padding: 5px;
+  border-radius: 8px;
+}
+#description:not(:target){
+  display: none;
+}
+#description:target{
+  display: block;
+}
+#description1:not(:target){
+  display: none;
+}
+#description1:target{
+  display: block;
+}
+#description2:not(:target){
+  display: none;
+}
+#description2:target{
+  display: block;
+}
+#description3:not(:target){
+  display: none;
+}
+#description3:target{
+  display: block;
+}
+#description4:not(:target){
+  display: none;
+}
+#description4:target{
+  display: block;
+}
+#description5:not(:target){
+  display: none;
+}
+#description5:target{
+  display: block;
+}
+  </style>
+  <h3 style="color: black; text-align: center;">Choose Your Own packages</h3>
+  <hr>
+   <div class="packages" style="display: flex;">
+    <div id="carta">
+      <img src="https://cdn.dribbble.com/users/5320513/screenshots/11475499/media/a4d1281c33fa502c7b2a1b54408102f0.gif" width="300px">
+      <h5>coffee Packaging</h5>
+      <i>
+        let’s be honest: looks matter.
+      </i>
+      <div id="description">
+        <p>
+          While a coffee package’s visual elements have no effect on the roasted beans inside, design can certainly influence consumers when they make a purchase.
+        </p>
+        <p>
+         packages have a big job; they’re responsible for conveying information about a coffee’s origin and producer, how the coffee was processed, as well as information about the roaster, roast date, tasting notes, company values . . . the list goes on. Pack too much information on a bag and you’ll overwhelm people. Leave out important details and you might lose a purchase—or even a customer
+        </p>
+        <a id="cerrar" href="#">x</a>
+       </div>
+      <a href="#description" class="boton">
+        Read More
+      </a>
+    </div>
+ <!-- crd2 -->
+<div id="carta1">
+  <img src="https://cdn.dribbble.com/users/2183424/screenshots/15357023/media/2bf92193a1389ce8df85383ca7df0979.gif" width="300px">
+  <h5>coffee Packaging</h5>
+  <i>
+    let’s be honest: looks matter.
+  </i>
+  <div id="description1">
+    <p>
+      While a coffee package’s visual elements have no effect on the roasted beans inside, design can certainly influence consumers when they make a purchase.
+    </p>
+    <p>
+     packages have a big job; they’re responsible for conveying information about a coffee’s origin and producer, how the coffee was processed, as well as information about the roaster, roast date, tasting notes, company values . . . the list goes on. Pack too much information on a bag and you’ll overwhelm people. Leave out important details and you might lose a purchase—or even a customer
+    </p>
+    <a id="cerrar" href="#">x</a>
+   </div>
+  <a href="#description1" class="boton">
+    Read More
+  </a>
+</div>
+<!-- crd3 -->
+<div id="carta2">
+  <img src="https://images.template.net/wp-content/uploads/2016/11/07142922/Retro-Vintage-Coffee-Bag.gif" width="300px">
+  <h5>coffee Packaging</h5>
+  <i>
+  let’s be honest: looks matter.
+</i>
+<div id="description2">
+  <p>
+    While a coffee package’s visual elements have no effect on the roasted beans inside, design can certainly influence consumers when they make a purchase.
+  </p>
+  <p>
+   packages have a big job; they’re responsible for conveying information about a coffee’s origin and producer, how the coffee was processed, as well as information about the roaster, roast date, tasting notes, company values . . . the list goes on. Pack too much information on a bag and you’ll overwhelm people. Leave out important details and you might lose a purchase—or even a customer
+  </p>
+  <a id="cerrar" href="#">x</a>
+ </div>
+<a href="#description2" class="boton">
+  Read More
+</a>
+</div>
+</div>
+<!-- prt2 -->
+<div class="packages" style="display: flex; margin-top: 5%;" >
+  <div id="carta">
+    <img src="https://cdn.dribbble.com/users/26952/screenshots/5554450/cg_baglineup_800x600.gif" width="300px">
+    <h5>coffee Packaging</h5>
+    <i>
+      let’s be honest: looks matter.
+    </i>
+    <div id="description3">
+      <p>
+        While a coffee package’s visual elements have no effect on the roasted beans inside, design can certainly influence consumers when they make a purchase.
+      </p>
+      <p>
+       packages have a big job; they’re responsible for conveying information about a coffee’s origin and producer, how the coffee was processed, as well as information about the roaster, roast date, tasting notes, company values . . . the list goes on. Pack too much information on a bag and you’ll overwhelm people. Leave out important details and you might lose a purchase—or even a customer
+      </p>
+      <a id="cerrar" href="#">x</a>
+     </div>
+    <a href="#description3" class="boton">
+      Read More
+    </a>
+  </div>
+<!-- crd2 -->
+<div id="carta1">
+<img src="https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/c_pad,f_auto,dpr_2.0,h_368,q_auto,w_368/va4nwvwzv3pbpdo33k7g.gif" width="300px" height="220px">
+<h5>coffee Packaging</h5>
+<i>
+  let’s be honest: looks matter.
+</i>
+<div id="description4">
+  <p>
+    While a coffee package’s visual elements have no effect on the roasted beans inside, design can certainly influence consumers when they make a purchase.
+  </p>
+  <p>
+   packages have a big job; they’re responsible for conveying information about a coffee’s origin and producer, how the coffee was processed, as well as information about the roaster, roast date, tasting notes, company values . . . the list goes on. Pack too much information on a bag and you’ll overwhelm people. Leave out important details and you might lose a purchase—or even a customer
+  </p>
+  <a id="cerrar" href="#">x</a>
+ </div>
+<a href="#description4" class="boton">
+  Read More
+</a>
+</div>
+<!-- crd3 -->
+<div id="carta2">
+<img src="https://www.urbanbrew.co/media/wysiwyg/Straw-Gif-1200x800-Gif.gif" width="300px">
+<h5>coffee Packaging</h5>
+<i>
+  let’s be honest: looks matter.
+</i>
+<div id="description5">
+  <p>
+    While a coffee package’s visual elements have no effect on the roasted beans inside, design can certainly influence consumers when they make a purchase.
+  </p>
+  <p>
+   packages have a big job; they’re responsible for conveying information about a coffee’s origin and producer, how the coffee was processed, as well as information about the roaster, roast date, tasting notes, company values . . . the list goes on. Pack too much information on a bag and you’ll overwhelm people. Leave out important details and you might lose a purchase—or even a customer
+  </p>
+  <a id="cerrar" href="#">x</a>
+ </div>
+<a href="#description5" class="boton">
+  Read More
+</a>
+</div>
+</div>
+<hr>
+<a style="width: 10%;text-align: center;margin-left: 45%;" href="{%url 'customizing' %}" class="boton">
+  Back
+</a>
+</body>
+</html>
+
+

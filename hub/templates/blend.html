@@ -1,0 +1,225 @@
+{% include 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <title>@Blends</title>
+
+</head>
+<body>
+  <style>
+    html{
+  background-color: black;
+  box-sizing: border-box;
+}
+#carta{
+ margin-left: 1%;
+ padding: 20px;
+  font-size: 22px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+  text-align: center;
+  width: 300px;
+  margin-left: 10%;
+}
+#carta1{
+  margin-left: 1%;
+   padding: 20px;
+   font-size: 22px;
+   border-radius: 25px;
+   background-color: white;
+   box-shadow: 2px 2px 10px black;
+   text-align: center;
+   width: 300px;
+ }
+ #carta2{
+  margin-left: 1%;
+  padding: 20px;
+   font-size: 22px;
+   border-radius: 25px;
+   background-color: white;
+   box-shadow: 2px 2px 10px black;
+   text-align: center;
+   width: 300px;
+ }
+/* img{
+  border-radius: 25px;
+  box-shadow: 5px 5px 4px gray;
+  transition: 1s;
+} */
+body{
+      background-color: antiquewhite;
+    }
+img:hover{
+  filter: invert(100%);
+}
+p{
+  text-align: justify;
+}
+.boton{
+  text-decoration: none;
+  margin: 20px;
+  padding: 2px 20px;
+  border-radius: 20px;
+  border: solid tomato 2px;
+  color: black;
+  box-shadow: 2px 2px 2px gray;
+  display: block;
+  transition: .5s;
+}
+.boton:hover{
+  background-color: tomato;
+}
+#cerrar{
+  text-decoration: none;
+  color: red;
+  border: solid red 1px;
+  padding: 5px;
+  border-radius: 8px;
+}
+#description:not(:target){
+  display: none;
+}
+#description:target{
+  display: block;
+}
+#description1:not(:target){
+  display: none;
+}
+#description1:target{
+  display: block;
+}
+#description2:not(:target){
+  display: none;
+}
+#description2:target{
+  display: block;
+}
+#description3:not(:target){
+  display: none;
+}
+#description3:target{
+  display: block;
+}
+#description4:not(:target){
+  display: none;
+}
+#description4:target{
+  display: block;
+}
+#description5:not(:target){
+  display: none;
+}
+#description5:target{
+  display: block;
+}
+  </style>
+  <h3 style="color: black; text-align: center;">Coffee Blends</h3>
+  <hr>
+   <div class="packages" style="display: flex;">
+    <div id="carta">
+      <img style="height: 70%;" src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/64/095331/1.jpg?3649" class="card-img-top" alt="...">
+      <!-- <h1>coffee Packaging</h1>
+      <i>
+        let’s be honest: looks matter.
+      </i> -->
+      <div id="description">
+        <p>Blend Africa Altura Medium Ground Roast Coffee - 250g100% Arabica Coffee Beans And</p>
+        <a id="cerrar" href="#">x</a>
+       </div>
+      <a href="#description" class="boton">
+        Read More
+      </a>
+    </div>
+ <!-- crd2 -->
+<div id="carta1">
+  <img style="height: 70%;" src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/23/973223/1.jpg?4365" class="card-img-top" alt="...">
+  <!-- <h1>coffee Packaging</h1> -->
+  <div id="description1">
+    <p>
+      Generic Maguta Estate - Premium Blend Organic Coffee, 250 gms - Medium Roast, Medium Grind.</p>
+    <a id="cerrar" href="#">x</a>
+   </div>
+  <a href="#description1" class="boton">
+    Read More
+  </a>
+</div>
+<!-- crd3 -->
+<div id="carta2">
+  <img style="height: 70%;" src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/07/695834/1.jpg?2188" class="card-img-top" alt="...">
+  <!-- <h1>coffee Packaging</h1> -->
+<div id="description2">
+  <p>
+    Maccoffee House Blend Ground Coffee 375g</p>
+  <a id="cerrar" href="#">x</a>
+ </div>
+<a href="#description2" class="boton">
+  Read More
+</a>
+</div>
+</div>
+<!-- prt2 -->
+<div class="packages" style="display: flex; margin-top: 5%;" >
+  <div id="carta">
+    <img style="height: 70%;" src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/08/537134/1.jpg?5832" class="card-img-top" alt="...">
+    <!-- <h1>coffee Packaging</h1> -->
+    <div id="description3">
+      <p>
+       KAFE KOKO Espresso Blend Dark Roasted Bean Coffee - 375g
+      </p>
+      <a id="cerrar" href="#">x</a>
+     </div>
+    <a href="#description3" class="boton">
+      Read More
+    </a>
+  </div>
+<!-- crd2 -->
+<div id="carta1">
+  <img style="height: 70%;" src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/06/657534/1.jpg?6460" class="card-img-top" alt="...">
+  <!-- <h1>coffee Packaging</h1> -->
+<div id="description4">
+  <p>
+    Kenyan Barista Tamaduni Blend (Coffee Beans)
+   </p>
+  <a id="cerrar" href="#">x</a>
+ </div>
+<a href="#description4" class="boton">
+  Read More
+</a>
+</div>
+<!-- crd3 -->
+<div id="carta2">
+  <img style="height: 70%;" src="https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/61/741874/1.jpg?5407" class="card-img-top" alt="...">
+  <!-- <h1>coffee Packaging</h1> -->
+<div id="description5">
+  <p>
+    Dormans Continental Blended Coffee - 375g - Dark Roast  </p>
+  <a id="cerrar" href="#">x</a>
+ </div>
+<a href="#description5" class="boton">
+  Read More
+</a>
+</div>
+</div>
+<hr>
+<a style="width: 10%;text-align: center;margin-left: 45%;" href="{%url 'acidity' %}" class="boton">
+  Grind
+</a>
+</body>
+</html>
+
+
+
+
+
+

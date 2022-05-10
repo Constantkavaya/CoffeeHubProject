@@ -1,0 +1,360 @@
+{% include 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>@coffeehub/products</title>
+</head>
+<style>
+      body{
+      background-color: antiquewhite;
+    }
+    /* truning the cards */
+    /* kkkkkkkkkkkkkkkkkkkkkkkk */
+
+    .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    background-color:rgba(165, 42, 42, 0.5);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  a{
+   color: white;
+  }
+</style>
+<body>
+    {% csrf_token %}
+<!--  
+  <div style="background-color: rgb(41, 24, 24);">
+  <img class="pic" src="https://icon2.cleanpng.com/20171221/ceq/coffee-logo-5a3b5ba22c4ca1.2562328315138395221815.jpg" style= "width:5%; height:8%;border-radius:100%">
+
+  <div style="background-color: black;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="nav-link active" aria-current="page" href="{% url 'home_page' %}">Home</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'home_page' %}">Customizing coffee</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'home_page' %}">About us</a>
+              
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Show with us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'home_page' %}">Coffee</a></li>
+              <li><a class="dropdown-item" href="{% url 'home_page' %}">Machines</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'home_page' %}">Coffee Cultures</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <h6>Login/Signup</h6>
+  </nav>
+</div>
+</div> -->
+<!-- end of navbars -->
+
+<h3 style="text-align: center;">Arabica Coffee</h3>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="text-align: center;width: 80%;margin-left: 10%;">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+  <div class="col">
+      <div class="card">
+        <img src="https://4.imimg.com/data4/HC/VS/MY-8582566/robusta-green-coffee-beans-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flip-card-back">
+    <p> Arabica coffee can help one to feel less tired and increase energy levels</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://5.imimg.com/data5/EA/AP/MY-25285763/green-coffee-bean-500x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flip-card-back">
+    <p> Arabica coffee is capitalizing on the ability of our skilled personnel, we are keenly instrumental in delivering a comprehensive array of Green Coffee Bean.</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://cdn11.bigcommerce.com/s-kf5hilm/images/stencil/original/products/535/1505/SOMEWHERE__89201.1615761195.jpg?c=2" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flip-card-back">
+    <p> THE CHOSEN BEAN, FRESHEST K CUPS IN THE WORLD, PERFECTLY ROAST COFFEE, ORGANIC FAIR TRADE, SMALL BATCH FRESHLY ROASTED DAY OF SHIPMENT, 18 K-CUPS (COSTA RICA)</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+
+  </div>
+  <hr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhh -->
+<h3 style="text-align: center;">Robusta  Coffee</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="text-align: center;width: 80%;margin-left: 10%; margin-top: 1%;">
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71WkHRXo7EL._SL1200_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="flip-card-back">
+    <p>RStBotanica Robusta Coffee Peel Off Mask 100g | With Coffee, Caffeine And Cocoa Butter | No SLS, Paraben</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+
+<div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81m%2B7l%2B-naL.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flip-card-back">
+    <p>Robuster Coffee can help one to feel less tired and increase energy levels</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41r6LuVhZpS._UL500_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flip-card-back">
+    <p>Have a look at the full range of genuine products and brands in our Others and Ground Coffee categories that you can safely buy online in Kenya at discounted prices.</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+  </div>
+  <hr>
+
+<!-- ffffffffffffff -->
+<h3 style="text-align: center;">Liberica Coffee</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="text-align: center;width: 80%;margin-left: 10%; margin-top: 1%;">
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://sc04.alicdn.com/kf/UTB884cHm22JXKJkSanrq6y3lVXaI.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="flip-card-back">
+    <p>Grade: AA Top
+      Varietals: Ruiru 11, SL28, SL34 (the SL varietals are Bourbon based and have been common in Kenya for Many years)
+      Altitude: 1,600 - 1,800 Meters Above Sea Level</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+
+<div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQosOWBEDjlEOrv_ddPnOi9LMnozCpkHZW-OSnIRvP13weH_Fg38dMUajz3bKUysr0Ex3I&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flip-card-back">
+    <p>Liberica coffee is huge coffee berries characterized by having a smoky, nutty, dark 
+      chocolate notes when roasted or brewed. Its beans are asymmetrical and almost almond 
+      and teardrop-shaped that has an exceptional aroma.</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51SHGrzn38L.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flip-card-back">
+    <p>Liberica Coffee can help one to feel less tired and increase energy levels</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+  </div>
+  <hr>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="text-align: center;width: 80%;margin-left: 10%; margin-top: 1%;">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+    <div class="col">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt3u8bWG5HsEbKbq7r5putPtmN6GJeMJgQ_CM00MS4F9rdHajYIhxpup_yg2oUwivUgSk&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- <h6 class="card-title">Arabica Coffee</h5> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card-back">
+    <p>An irresistible treat – the perfect union of cocoa and white coffee blend. Indulge yourself with a creamy rich and full of depth mocha white coffee.</p> 
+    <a href="{% url 'store' %}" class="">Order</a>
+  </div>
+</div>
+</div>
+
+</body>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  margin-top: 15%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: wheat;
+  color: black;
+  transform: rotateY(180deg);
+}
+</style>
+</html>
